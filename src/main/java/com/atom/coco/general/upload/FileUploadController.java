@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.io.FileUtils;
@@ -24,11 +23,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
-import org.springside.modules.web.Servlets;
 
 import com.atom.coco.general.constants.Constants;
-import com.atom.coco.modules.demo.entity.Task;
-import com.opensymphony.module.sitemesh.filter.PageResponseWrapper;
+
+
 
 @Controller
 @RequestMapping(value = "/upload")
