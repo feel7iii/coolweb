@@ -72,7 +72,7 @@ $(document).ready(
 				}
 				// from the library bootstrap-dialog.min.js
 				BootstrapDialog.show({
-					title : '<div class="alert alert-success" role="alert">上传成功</div>',
+					title : '<div class="alert alert-info">上传成功</div>',
 					message : responseContent
 				});
 			}

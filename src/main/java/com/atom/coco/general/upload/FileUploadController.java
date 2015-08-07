@@ -109,7 +109,10 @@ public class FileUploadController {
 	}
 
 	private String getOutputFilename(MultipartFile multipartFile) {
-
+		// Servlet初始化时执行,如果上传文件目录不存在则自动创建
+		if (!new File(Constants.UPLOADTEMP).isDirectory()) {
+			new File(Constants.UPLOADTEMP).mkdirs();
+		}
 		return Constants.UPLOADTEMP + multipartFile.getOriginalFilename();
 	}
 

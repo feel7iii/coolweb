@@ -17,11 +17,11 @@ request.setAttribute("end", end);
 <nav>
   <ul class="pagination">
 		 <% if (page.hasPrevious()){%>
-               	<li><a href="?page=1&sortType=${sortType}&${searchParams}">&lt;&lt;</a></li>
-                <li><a href="?page=${current-1}&sortType=${sortType}&${searchParams}">&lt;</a></li>
+			<li><a href="?page=1&sortType=${sortType}&${searchParams}">&lt;&lt;</a></li>
+			<li><a href="?page=${current-1}&sortType=${sortType}&${searchParams}">&lt;</a></li>
          <%}else{%>
-                <li class="disabled"><a href="#">&lt;&lt;</a></li>
-                <li class="disabled"><a href="#">&lt;</a></li>
+            <li class="disabled"><a href="#">&lt;&lt;</a></li>
+			<li class="disabled"><a href="#">&lt;</a></li>
          <%} %>
  
 		<c:forEach var="i" begin="${begin}" end="${end}">
@@ -36,13 +36,12 @@ request.setAttribute("end", end);
         </c:forEach>
 	  
 	  	 <% if (page.hasNext()){%>
-               	<li><a href="?page=${current+1}&sortType=${sortType}&${searchParams}">&gt;</a></li>
-                <li><a href="?page=${page.totalPages}&sortType=${sortType}&${searchParams}">&gt;&gt;</a></li>
+			<li><a href="?page=${current+1}&sortType=${sortType}&${searchParams}">&gt;</a></li>
+            <li><a href="?page=${page.totalPages}&sortType=${sortType}&${searchParams}">&gt;&gt;</a></li>
          <%}else{%>
-                <li class="disabled"><a href="#">&gt;</a></li>
-                <li class="disabled"><a href="#">&gt;&gt;</a></li>
+            <li class="disabled"><a href="#">&gt;</a></li>
+            <li class="disabled"><a href="#">&gt;&gt;</a></li>
          <%} %>
-
 	</ul>
 </nav>
 
