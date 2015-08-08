@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
  * 
  * 真正登录的POST请求由Filter完成,
  * 
- * @author calvin
  */
 @Controller
 @RequestMapping(value = "/login")

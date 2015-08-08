@@ -44,7 +44,7 @@
 
 	<ul class="nav nav-list">
 		<li class="">
-			<a data-url="page/index" href="#page/index">
+			<a data-url="page/index" href="${ctx}/index">
 				<i class="menu-icon fa fa-tachometer"></i>
 				<span class="menu-text"> Dashboard </span>
 			</a>

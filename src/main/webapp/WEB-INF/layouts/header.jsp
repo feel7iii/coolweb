@@ -26,7 +26,7 @@
 			<!-- #section:basics/navbar.layout.brand -->
 			<a href="#" class="navbar-brand">
 				<small>
-					<img alt="" src="${ctx}/static/images/favicon.ico" style="height: 24px; width: 24px;">
+					<img alt="" src="${ctx}/static/images/favicon.ico" style="height: 20px; width: 20px;">
 					Mr.Wu's Tools
 				</small>
 			</a>
