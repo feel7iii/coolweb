@@ -10,7 +10,7 @@
 <style>
 .table th, .table td { 
 text-align: center; 
-height: 24px;
+height: 20px;
 }
 </style>
 </head>
@@ -49,8 +49,8 @@ height: 24px;
 								<c:when test="${(dataFile.size >= 1024*1024)}">
 									<fmt:formatNumber value="${dataFile.size/(1024 * 1024 * 1.0)}" maxFractionDigits="2" /> MB
 								</c:when>
-							</c:choose></td>
-			
+							</c:choose>
+						</td>
 						<td>
 							<a href="${ctx}/upload/get/${dataFile.id}">
 								<button class="btn btn-white btn-info btn-bold"><i class="ace-icon fa fa-floppy-o bigger-120 blue"></i>下载</button>
@@ -60,7 +60,7 @@ height: 24px;
 				</c:forEach>
 			</tbody>
 		</table>
-		</div>
+	</div>
 	<tags:pagination page="${fileList}" paginationSize="5"/>
 </body>
 

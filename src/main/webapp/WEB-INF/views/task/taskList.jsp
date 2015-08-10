@@ -37,7 +37,7 @@
 	<hr>
 	<div class="row">
 		<div class="col-xs-12">
-			<table id="contentTable" class="table table-striped table-bordered table-condensed">
+			<table id="contentTable" class="table table-striped table-bordered table-condensed  table-hover">
 				<thead><tr><th>任务</th><th>管理</th></tr></thead>
 				<tbody>
 				<c:forEach items="${tasks.content}" var="task">

@@ -2,8 +2,10 @@
 <decorators defaultdir="/WEB-INF/layouts/">
 	<excludes>
 		<pattern>/static/*</pattern>
+		<pattern>/index</pattern>
 		<pattern>/api/*</pattern>
 		<pattern>/login</pattern>
+		<pattern>/register</pattern>
 	</excludes>
 	
 	<decorator name="default" page="default.jsp">

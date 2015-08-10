@@ -1,18 +1,16 @@
 body {
-	background: #DCDDDF url(coolweb/static/images/img/login-bg.jpg);
-	color: #000;
-	font: 14px Arial;
-	margin: 0 auto;
-	padding: 0;
-	position: relative;
+	background: #eee;
+	background-image: url(../img/bgImg/bg_e.png);
+	background-position: initial initial;
+	background-repeat: initial initial;
+	background-position: initial initial;
+	background-repeat: initial initial;
+	margin: 0px;
+	padding: 0px;
 }
 h1{ font-size:28px;}
-h2{ font-size:26px;}
-h3{ font-size:18px;}
-h4{ font-size:16px;}
-h5{ font-size:14px;}
-h6{ font-size:12px;}
-h1,h2,h3,h4,h5,h6{ color:#563D64;}
+h2{ font-size:24px;}
+h1,h2{ color:#563D64;}
 small{ font-size:10px;}
 b, strong{ font-weight:bold;}
 a{ text-decoration: none; }
@@ -137,7 +135,7 @@ form:after {
 	-ms-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
-	background: #eae7e7 url(coolweb/static/login/login.png) no-repeat;
+	background: #eae7e7 url(../img/signin/1.png) no-repeat;
 	border: 1px solid #c8c8c8;
 	color: #777;
 	font: 13px Helvetica, Arial, sans-serif;
@@ -225,7 +223,7 @@ form:after {
 	padding: 15px 0;
 }
 .button a {
-	background: url(coolweb/static/login/login.png) 0 -112px no-repeat;
+	background: url(../img/signin/2.png) 0 -112px no-repeat;
 	color: #7E7E7E;
 	font-size: 17px;
 	padding: 2px 0 2px 40px;
