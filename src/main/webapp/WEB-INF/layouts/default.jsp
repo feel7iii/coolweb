@@ -4,7 +4,7 @@
 <c:set var="ctx" value="${pageContext.request.contextPath}" />
 
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="en">
 	<head>
 		<title><sitemesh:title/></title>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
