@@ -39,23 +39,22 @@
 		<jetty.version>8.1.16.v20140903</jetty.version>
 		<tomcat.version>2.1</tomcat.version>
 		<h2.version>1.3.176</h2.version>
+		<mysql.version>5.1.36</mysql.version>
 
 		<!-- Plugin的属性定义 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.7</java.version>
 
-		<!-- 项目属性H2 -->
+		<!-- 项目属性H2 
 		<jdbc.driver.groupId>com.h2database</jdbc.driver.groupId>
-		<jdbc.driver.artifactId>h2</jdbc.driver.artifactId>
-		<jdbc.driver.version>${h2.version}</jdbc.driver.version>
-		
+		<jdbc.driver.artifactId>h2</jdbc.driver.artifactId> 
+	    <jdbc.driver.version>${h2.version}</jdbc.driver.version> 
+	    -->
 
-		<!-- 项目属性MYSQL 
+		<!-- 项目属性MYSQL -->
 		<jdbc.driver.groupId>mysql</jdbc.driver.groupId>
-		<jdbc.driver.artifactId>mysql-connector-java</jdbc.driver.artifactId> 
-		<jdbc.driver.version>5.1.36</jdbc.driver.version>
-		-->
-		
+		<jdbc.driver.artifactId>mysql-connector-java</jdbc.driver.artifactId>
+		<jdbc.driver.version>${mysql.version}</jdbc.driver.version>
 	</properties>
 
 	<prerequisites>
@@ -461,7 +460,7 @@
 				</configuration>
 			</plugin>
 
-			<!-- enforcer插件, 避免被依赖的依赖引入过期的jar�? -->
+			<!-- enforcer插件, 避免被依赖的依赖引入过期的jar -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
@@ -538,7 +537,7 @@
 					</webAppConfig>
 				</configuration>
 			</plugin>
-			
+
 			<!-- tomcat7 插件 -->
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
@@ -550,8 +549,8 @@
 					</systemProperties>
 					<useTestClasspath>true</useTestClasspath>
 				</configuration>
-			</plugin> 
-			
+			</plugin>
+
 		</plugins>
 	</build>
 
@@ -582,7 +581,7 @@
 				</plugins>
 			</build>
 		</profile>
-		
+
 		<!--打包可执行war包,基于Tomcat -->
 		<profile>
 			<id>standalone-tomcat</id>
