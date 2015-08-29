@@ -36,6 +36,9 @@
 
 		<!-- JQUERY VALIDATION CSS-->
 		<link href="${ctx}/static/jquery-validation/1.11.1/validate.css" type="text/css" rel="stylesheet" />
+		
+		<!-- JSTREE CSS -->
+		<link href="${ctx}/static/jstree/css/style.min.css" type="text/css" rel="stylesheet" />
 
 		<!-- DROPZONE CSS-->
 		<link href="${ctx}/static/bootstrapdialog/css/bootstrap-dialog.min.css" type="text/css" rel="stylesheet" />
@@ -129,5 +132,8 @@
 		<script src="${ctx}/static/bootstrapdialog/js/bootstrap-dialog.min.js" type="text/javascript"></script>
 		<script src="${ctx}/static/dropzone/js/dropzone.min.js" type="text/javascript"></script>
 		<script src="${ctx}/static/dropzone/js/app.js" type="text/javascript"></script>
+		
+		<!-- JSTREE JS -->
+		<script src="${ctx}/static/jstree/js/jstree.min.js" type="text/javascript"></script>
 	</body>
 </html>

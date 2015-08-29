@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50621
 File Encoding         : 65001
 
-Date: 2015-08-26 10:13:24
+Date: 2015-08-28 19:06:04
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -26,12 +26,17 @@ CREATE TABLE `co_part` (
   `size` bigint(20) DEFAULT NULL,
   `type` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of co_part
 -- ----------------------------
 INSERT INTO `co_part` VALUES ('10', 'D:/UPLOADTEMP/', 'commons-beanutils-1.8.3.jar', '232019', 'application/octet-stream');
+INSERT INTO `co_part` VALUES ('11', 'D:/UPLOADTEMP/', 'commons-beanutils-1.8.3.jar', '232019', 'application/octet-stream');
+INSERT INTO `co_part` VALUES ('12', 'D:/UPLOADTEMP/', 'commons-collections-3.2.1.jar', '575389', 'application/octet-stream');
+INSERT INTO `co_part` VALUES ('13', 'D:/UPLOADTEMP/', 'commons-configuration-1.10.jar', '362679', 'application/octet-stream');
+INSERT INTO `co_part` VALUES ('14', 'D:/UPLOADTEMP/', 'commons-discovery-0.5.jar', '79796', 'application/octet-stream');
+INSERT INTO `co_part` VALUES ('15', 'D:/UPLOADTEMP/', 'commons-fileupload-1.2.1.jar', '57779', 'application/octet-stream');
 
 -- ----------------------------
 -- Table structure for ss_task
