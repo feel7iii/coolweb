@@ -23,12 +23,11 @@ public class SubjectService {
 		List<Subject> subjectAll = new ArrayList<Subject>();
 		List<Subject> subjectLst = subjectDao.findRoots();
 		for (int i = 0; i < subjectLst.size(); i++) {
-			Subject sub = subjectLst.get(i);
-			List<Subject> sonSubLst = subjectDao.findAll(sub.getDn());
+			Subject subject = subjectLst.get(i);
+			List<Subject> sonSubLst = subjectDao.findAll(subject.getDn());
 			for (int j = 0; j < sonSubLst.size(); j++) {
-				sub.setSonSub(sonSubLst.get(i));
+				System.out.println(sonSubLst.get(i));
 			}
-			subjectAll.add(sub);
 		}
 		return subjectAll;
 	}

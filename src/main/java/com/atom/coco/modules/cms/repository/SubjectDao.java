@@ -11,7 +11,7 @@ import com.atom.coco.modules.cms.entity.Subject;
 public interface SubjectDao extends PagingAndSortingRepository<Subject, Long> {
 	
 	@Modifying
-	@Query("select sub.id, sub.fatherId, sub.name, sub.dn from Subject sub where sub.status='2' and (sub.type='1' or sub.type='3' or sub.type='4') and sub.fatherId = 1 order by id")
+	@Query("select sub from Subject sub where sub.status='2' and (sub.type='1' or sub.type='3' or sub.type='4') and sub.fatherId = 1 order by id")
 	List<Subject> findRoots();
 	
 	@Modifying

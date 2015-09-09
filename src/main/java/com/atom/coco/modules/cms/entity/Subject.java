@@ -4,11 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
-import org.apache.commons.lang3.builder.ToStringBuilder;
 
 //JPA标识
 @Entity
@@ -21,7 +17,6 @@ public class Subject {
 	private String dn;
 	private String status;
 	private String type;
-	private Subject sonSub;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -71,20 +66,5 @@ public class Subject {
 
 	public void setType(String type) {
 		this.type = type;
-	}
-
-	@ManyToOne
-	@JoinColumn(name = "son_sub")
-	public Subject getSonSub() {
-		return sonSub;
-	}
-
-	public void setSonSub(Subject sonSub) {
-		this.sonSub = sonSub;
-	}
-
-	@Override
-	public String toString() {
-		return ToStringBuilder.reflectionToString(this);
 	}
 }
